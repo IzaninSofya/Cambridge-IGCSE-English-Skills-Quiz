@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IGCSE ESL Skills Sampler</title>
+<meta name="description" content="Exam-style reading and writing practice for Cambridge IGCSE English as a Second Language (0510) learners: five skill sets with original texts, hints and explanations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@600;700;800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap">
+<style>
+:root{
+  --ground:#EEF8F6; --ground-2:#DFF2EE;
+  --surface:#FFFFFF; --surface-2:#F7FCFB;
+  --ink:#1F2A44; --muted:#5E6A85; --line:#1F2A44; --shade:#1F2A44;
+  --accent:#0E9F94; --accent-ink:#FFFFFF; --pop:#FF7A59; --star:#FFC83D; --star-off:#DCE8E6; --star-stroke:#1F2A44;
+  --good:#1A9E6F; --good-bg:#DBF5EA; --bad:#E04866; --bad-bg:#FFE3EA;
+  --hint-bg:#FFF6D6; --hint-ink:#6B4E00; --paper:#FFFDF7; --paper-line:#E9E1CC;
+  --set:#F9C74F;
+  --r-lg:26px; --r-md:18px; --r-sm:12px;
+  --display:"Fredoka","SF Pro Rounded",ui-rounded,"Arial Rounded MT Bold","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito","SF Pro Rounded",ui-rounded,"Segoe UI",system-ui,sans-serif;
+  --read:"Literata",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1A22; --ground-2:#15232D;
+    --surface:#1B2B36; --surface-2:#213440;
+    --ink:#E9F4F2; --muted:#9FB3BC; --line:#3F6170; --shade:#070D12;
+    --accent:#3CCFC2; --accent-ink:#0F1A22; --pop:#FF8F73; --star:#FFD25E; --star-off:#2B4250; --star-stroke:#8FB4C2;
+    --good:#44D6A0; --good-bg:#153B30; --bad:#FF728E; --bad-bg:#45192A;
+    --hint-bg:#3A3217; --hint-ink:#FFE08A; --paper:#1E2C35; --paper-line:#35505E;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1A22; --ground-2:#15232D;
+  --surface:#1B2B36; --surface-2:#213440;
+  --ink:#E9F4F2; --muted:#9FB3BC; --line:#3F6170; --shade:#070D12;
+  --accent:#3CCFC2; --accent-ink:#0F1A22; --pop:#FF8F73; --star:#FFD25E; --star-off:#2B4250; --star-stroke:#8FB4C2;
+  --good:#44D6A0; --good-bg:#153B30; --bad:#FF728E; --bad-bg:#45192A;
+  --hint-bg:#3A3217; --hint-ink:#FFE08A; --paper:#1E2C35; --paper-line:#35505E;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--ground);color:var(--ink);
+  font-family:var(--body);font-weight:600;font-size:16px;line-height:1.5;
+  min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--pop);outline-offset:3px;border-radius:10px}
+[hidden]{display:none!important}
+.wrap{max-width:1120px;margin:0 auto;padding:calc(env(safe-area-inset-top,0px) + 18px) 16px 40px}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:var(--display);font-weight:600;font-size:16px;padding:11px 18px;border-radius:99px;
+  border:2.5px solid var(--line);background:var(--surface);box-shadow:0 3px 0 var(--shade);transition:transform .12s, box-shadow .12s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 5px 0 var(--shade)}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--shade)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;box-shadow:none;border-color:transparent;color:var(--muted)}
+.btn.ghost:hover{border-color:var(--muted);transform:none}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.icon-btn{
+  width:44px;height:44px;border-radius:14px;border:2.5px solid var(--line);background:var(--surface);
+  box-shadow:0 3px 0 var(--shade);display:grid;place-items:center;flex:none;transition:transform .12s;
+}
+.icon-btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--shade)}
+.icon-btn svg{width:22px;height:22px}
+
+/* ---------- mascots (from MUET Vocab Quest) ---------- */
+.mascot{display:block;width:100%;height:auto;overflow:visible}
+.mascot .eyes-happy,.mascot .m-happy,.mascot .m-sad,.mascot .tear,.mascot .brows{display:none}
+.mascot.happy .eyes-open,.mascot.happy .m-idle{display:none}
+.mascot.happy .eyes-happy,.mascot.happy .m-happy{display:inline}
+.mascot.sad .m-idle{display:none}
+.mascot.sad .m-sad,.mascot.sad .tear,.mascot.sad .brows{display:inline}
+.mascot .eyes-open{transform-box:fill-box;transform-origin:center;animation:blink 4.6s infinite}
+.mascot .bobber{transform-box:fill-box;transform-origin:50% 100%;animation:bob 2.6s ease-in-out infinite}
+.mascot.happy .bobber{animation:hop .55s ease-out 2,bob 2.6s ease-in-out 1.1s infinite}
+.mascot.sad .bobber{transform-origin:50% 90%;animation:wobble .5s ease-in-out 1,bob 3.4s ease-in-out .5s infinite}
+.mascot .tear{animation:drip 1.4s ease-in infinite}
+.mascot .antenna-bulb{animation:glow 1.2s ease-in-out infinite alternate}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes bob{0%,100%{transform:translateY(0) scale(1,1)}50%{transform:translateY(-4px) scale(1.01,.99)}}
+@keyframes hop{0%{transform:translateY(0) scale(1)}30%{transform:translateY(0) scale(1.08,.9)}60%{transform:translateY(-16px) scale(.95,1.06)}100%{transform:translateY(0) scale(1)}}
+@keyframes wobble{0%,100%{transform:rotate(0)}25%{transform:rotate(-7deg)}75%{transform:rotate(7deg)}}
+@keyframes drip{0%{transform:translateY(0);opacity:1}100%{transform:translateY(10px);opacity:0}}
+@keyframes glow{to{opacity:.35}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* ---------- HOME ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:600;font-size:15px;color:var(--muted)}
+.brand b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:var(--accent);color:var(--accent-ink);border:2.5px solid var(--line);font-size:13px;transform:rotate(-6deg)}
+.hero{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;margin:26px 0 8px}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,6vw,56px);line-height:1;margin:0;letter-spacing:-.5px;text-wrap:balance}
+.hero h1 span{color:var(--accent)}
+.hero p{margin:12px 0 0;color:var(--muted);font-size:clamp(16px,2vw,18px);max-width:34em;text-wrap:pretty}
+.parade{display:flex;align-items:flex-end}
+.parade .p{width:74px;margin-left:-14px;animation:rise .6s cubic-bezier(.3,1.6,.5,1) backwards}
+@keyframes rise{from{transform:translateY(30px);opacity:0}}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.parade{justify-content:center}.parade .p{width:58px}}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:99px;border:2px solid var(--line);background:var(--surface);font-family:var(--display);font-weight:500;font-size:14px}
+.chip b{font-weight:700;font-variant-numeric:tabular-nums}
+
+.sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:34px 0 12px;flex-wrap:wrap}
+.sec-h h2{font-family:var(--display);font-weight:600;font-size:24px;margin:0}
+.sec-h p{margin:0;color:var(--muted);font-size:14.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{
+  position:relative;display:grid;grid-template-columns:76px 1fr;gap:14px;align-items:start;text-align:left;
+  padding:16px;border-radius:var(--r-lg);border:2.5px solid var(--line);background:var(--surface);box-shadow:0 5px 0 var(--shade);
+  transition:transform .18s cubic-bezier(.3,1.6,.5,1), box-shadow .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 0 var(--shade)}
+.card:active{transform:translateY(2px);box-shadow:0 2px 0 var(--shade)}
+.card .face{display:block;width:76px;aspect-ratio:1;border-radius:20px;background:color-mix(in srgb,var(--c) 45%,var(--surface));border:2px solid var(--line);padding:6px}
+.card .num{font-family:var(--display);font-weight:600;font-size:12.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
+.card h3{font-family:var(--display);font-weight:600;font-size:20px;margin:2px 0 4px;line-height:1.15}
+.card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.45}
+.card .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px}
+.tag{font-family:var(--display);font-weight:500;font-size:12.5px;padding:3px 10px;border-radius:99px;border:1.5px solid var(--line);background:color-mix(in srgb,var(--c,var(--set)) 35%,var(--surface))}
+.tag.skill{background:var(--surface-2)}
+.mini-stars{display:inline-flex;gap:2px;margin-left:auto}
+.mini-stars svg{width:18px;height:18px}
+
+.teacher{
+  margin-top:28px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;
+  padding:18px 20px;border-radius:var(--r-lg);border:2.5px dashed var(--line);background:var(--surface-2);
+}
+.teacher h3{margin:0;font-family:var(--display);font-weight:600;font-size:20px}
+.teacher p{margin:4px 0 0;color:var(--muted);font-size:15px}
+@media (max-width:600px){.teacher{grid-template-columns:1fr}}
+
+.foot{margin-top:34px;text-align:center;color:var(--muted);font-size:13.5px}
+.foot .keys{display:inline-flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:10px}
+.foot .note{max-width:44em;margin:8px auto;padding:10px 14px;border-radius:14px;border:1.5px dashed var(--muted);text-align:left;line-height:1.5;text-wrap:pretty}
+.foot .note b{color:var(--ink)}
+kbd{font-family:var(--display);font-size:12.5px;padding:2px 8px;border-radius:7px;border:1.5px solid var(--muted);border-bottom-width:3px;background:var(--surface)}
+.heart{display:inline-block;animation:heartbeat 1.8s ease-in-out infinite}
+@keyframes heartbeat{0%,45%,100%{transform:scale(1)}12%{transform:scale(1.25)}22%{transform:scale(1.05)}32%{transform:scale(1.18)}}
+
+/* ---------- QUIZ ---------- */
+.qbar{display:flex;align-items:center;gap:12px}
+.qtitle{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.qtitle span{font-size:13px;color:var(--muted);font-family:var(--display);letter-spacing:.5px;text-transform:uppercase}
+.qtitle strong{font-family:var(--display);font-weight:600;font-size:19px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:15px;border:2px solid var(--line);font-variant-numeric:tabular-nums}
+.pill.good{background:var(--good-bg);color:var(--good)} .pill.bad{background:var(--bad-bg);color:var(--bad)}
+.counters{display:flex;gap:6px}
+.segbar{display:flex;gap:5px;margin:16px 0 4px}
+.segbar i{flex:1;height:10px;border-radius:99px;background:var(--star-off);transition:background .3s, transform .3s}
+.segbar i.cur{background:var(--accent);transform:scaleY(1.35)}
+.segbar i.ok{background:var(--good)} .segbar i.no{background:var(--bad)}
+
+.qlayout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;margin-top:18px;align-items:start}
+.qlayout.solo{grid-template-columns:minmax(0,720px);justify-content:center}
+.text{
+  position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);max-height:calc(100vh - 40px);overflow:auto;
+  background:var(--paper);border:2.5px solid var(--line);border-radius:var(--r-lg);box-shadow:0 6px 0 var(--shade);
+  padding:20px 22px;font-family:var(--read);font-weight:400;font-size:16.5px;line-height:1.7;
+}
+.text summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;font-family:var(--display);font-weight:600;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+.text summary::-webkit-details-marker{display:none}
+.text summary .tog{font-size:13px;padding:3px 10px;border-radius:99px;border:1.5px solid var(--line);text-transform:none;letter-spacing:0;color:var(--ink)}
+.text details:not([open]) .tog-close{display:none}
+.text details[open] .tog-open{display:none}
+.text h2{font-family:var(--read);font-weight:600;font-size:21px;line-height:1.3;margin:12px 0 4px;text-wrap:balance}
+.text .by{margin:0 0 10px;font-style:italic;color:var(--muted);font-size:14.5px}
+.text p{margin:0 0 12px;text-wrap:pretty}
+.text .pn{display:inline-block;min-width:1.6em;font-family:var(--display);font-weight:600;font-size:12px;color:var(--muted);vertical-align:2px}
+.text .notice{border:2px dashed var(--paper-line);border-radius:16px;padding:6px 16px 4px;margin-top:10px}
+.person{border-top:1.5px solid var(--paper-line);padding-top:12px;margin-top:12px}
+.person:first-of-type{border-top:0;margin-top:6px}
+.person h3{display:flex;align-items:center;gap:8px;margin:0 0 4px;font-family:var(--display);font-weight:600;font-size:16px}
+.person h3 .lbl{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:var(--surface);border:2px solid var(--line);font-size:14px}
+.person h3 small{font-family:var(--body);font-weight:600;color:var(--muted);font-size:13px}
+.person p{margin:0}
+@media (max-width:860px){
+  .qlayout{grid-template-columns:1fr}
+  .text{position:static;max-height:none;padding:14px 16px;font-size:16px}
+}
+
+.qside{display:flex;flex-direction:column;gap:12px}
+.buddy{display:flex;align-items:center;gap:12px}
+.buddy .mascot-box{width:70px;flex:none}
+.bubble{position:relative;flex:1;background:var(--surface);border:2.5px solid var(--line);border-radius:16px;padding:8px 12px;font-family:var(--display);font-weight:500;font-size:15px;line-height:1.3}
+.bubble::before{content:"";position:absolute;left:-9px;top:50%;width:14px;height:14px;background:var(--surface);border-left:2.5px solid var(--line);border-bottom:2.5px solid var(--line);transform:translateY(-50%) rotate(45deg);border-bottom-left-radius:4px}
+.bubble.say{animation:say .35s cubic-bezier(.3,1.7,.5,1)}
+@keyframes say{from{transform:scale(.88)}}
+
+.qcard{background:var(--surface);border:2.5px solid var(--line);border-radius:var(--r-lg);box-shadow:0 6px 0 var(--shade);padding:20px 20px 18px}
+.qcard.enter{animation:slideIn .38s cubic-bezier(.25,1.3,.5,1)}
+@keyframes slideIn{from{transform:translateX(30px) rotate(1deg);opacity:0}}
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.qnum{font-family:var(--display);font-weight:600;color:var(--muted);font-size:15px;margin:0;font-variant-numeric:tabular-nums}
+.ctx{margin:0 0 12px;padding:10px 14px;border-radius:14px;background:color-mix(in srgb,var(--set) 28%,var(--surface));border:2px solid var(--line);font-size:15.5px;line-height:1.45}
+.ctx .k{display:block;font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.stem{font-size:clamp(18px,2.4vw,20px);font-weight:800;line-height:1.5;margin:2px 0 16px;text-wrap:pretty}
+.options{display:grid;gap:10px}
+.opt{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+  padding:12px 14px;border-radius:var(--r-md);border:2.5px solid var(--line);background:var(--surface-2);
+  font-size:16.5px;font-weight:700;box-shadow:0 3px 0 var(--shade);transition:transform .12s, box-shadow .12s, background .2s, opacity .25s;
+}
+.opt .letter{flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:10px;font-family:var(--display);font-weight:600;font-size:15px;background:var(--surface);border:2px solid var(--line)}
+.opt .otext{flex:1}
+.opt:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 5px 0 var(--shade);background:color-mix(in srgb,var(--set) 22%,var(--surface))}
+.opt:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--shade)}
+.opt:disabled{cursor:default}
+.opt.correct{background:var(--good-bg);border-color:var(--good);box-shadow:0 3px 0 var(--good)}
+.opt.correct .letter{background:var(--good);color:#fff;border-color:var(--good)}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad);box-shadow:0 3px 0 var(--bad);animation:shake .45s}
+.opt.wrong .letter{background:var(--bad);color:#fff;border-color:var(--bad)}
+.opt.dim{opacity:.5}
+@keyframes shake{20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}
+.feedback{margin-top:14px;padding:12px 14px;border-radius:var(--r-md);border:2px dashed var(--good);background:var(--good-bg);animation:fadeUp .35s ease}
+.feedback.miss{border-color:var(--bad);background:var(--bad-bg)}
+.feedback b{font-family:var(--display);font-weight:600}
+.feedback p{margin:4px 0 0;font-weight:600}
+@keyframes fadeUp{from{transform:translateY(8px);opacity:0}}
+.hint-btn{margin-top:14px;display:inline-flex;align-items:center;gap:6px;background:none;border:2px solid transparent;border-radius:99px;padding:5px 12px;font-family:var(--display);font-weight:600;font-size:15px;color:var(--muted)}
+.hint-btn:hover{border-color:var(--muted)}
+.hint-btn svg{width:18px;height:18px}
+.hint{margin:8px 0 0;padding:10px 14px;border-radius:14px;background:var(--hint-bg);color:var(--hint-ink);animation:fadeUp .3s ease}
+.qnav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:4px}
+.qnav .tip{color:var(--muted);font-size:13.5px;text-align:center}
+@media (max-width:640px){.qcard{padding:16px 14px}.qnav .tip{display:none}.qtitle strong{white-space:normal;font-size:17px}.opt{font-size:16px;padding:11px 12px}}
+
+/* ---------- RESULT ---------- */
+.result{max-width:780px;margin:0 auto}
+.rhero{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;background:var(--surface);border:2.5px solid var(--line);border-radius:var(--r-lg);box-shadow:0 6px 0 var(--shade);padding:20px;margin-top:14px}
+.rhero h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,5vw,38px);margin:0;line-height:1.05;text-wrap:balance}
+.rhero .msg{margin:6px 0 12px;color:var(--muted);font-size:17px}
+.score-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.ring{position:relative;width:100px;height:100px;flex:none}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .track{fill:none;stroke:var(--star-off);stroke-width:11}
+.ring .fill{fill:none;stroke:var(--good);stroke-width:11;stroke-linecap:round;transition:stroke-dashoffset 1.2s cubic-bezier(.3,1,.4,1)}
+.ring .val{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:27px;font-variant-numeric:tabular-nums}
+.ring .val small{font-size:15px;color:var(--muted);font-weight:500}
+.rstars{display:flex;gap:6px}
+.rstars svg{width:38px;height:38px}
+.rstars .s{transform:scale(0);animation:starPop .5s cubic-bezier(.3,1.9,.5,1) forwards}
+.rstars .s:nth-child(2){animation-delay:.25s}.rstars .s:nth-child(3){animation-delay:.5s}
+@keyframes starPop{to{transform:scale(1)}}
+.ractions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 6px}
+@media (max-width:600px){.rhero{grid-template-columns:1fr;text-align:center;justify-items:center}.rhero .mascot-box{width:120px}.score-row{justify-content:center}.ractions .btn{flex:1 1 auto}}
+.review-h{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:26px;flex-wrap:wrap}
+.review-h h3{font-family:var(--display);font-weight:600;font-size:21px;margin:0}
+.seg{display:inline-flex;border:2px solid var(--line);border-radius:99px;overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:6px 14px;font-family:var(--display);font-weight:500;font-size:14px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.review{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.review li{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:12px 14px;border-radius:var(--r-md);background:var(--surface);border:2px solid var(--line)}
+.review .mk{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:700}
+.review .ok .mk{background:var(--good)} .review .no .mk{background:var(--bad)}
+.review .rq{margin:0;font-weight:800}
+.review .rctx{margin:0 0 2px;font-size:13.5px;color:var(--muted)}
+.review .ans{margin:4px 0 0}
+.review .ans mark{background:var(--good-bg);color:var(--good);padding:0 6px;border-radius:6px;font-weight:800}
+.review .you{margin:4px 0 0;font-size:14.5px;color:var(--bad)}
+.review .why{margin:4px 0 0;font-size:14.5px;color:var(--muted)}
+
+.slip{margin:22px 0 6px;padding:18px;border-radius:var(--r-lg);background:var(--surface);border:2.5px dashed color-mix(in srgb,var(--set) 70%,var(--line))}
+.slip h3{font-family:var(--display);font-weight:600;font-size:20px;margin:0}
+.slip p{margin:4px 0 0;color:var(--muted)}
+.slip-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:10px;align-items:end;margin-top:14px}
+.slip-form label{display:flex;flex-direction:column;gap:5px;font-family:var(--display);font-weight:500;font-size:14px;color:var(--muted)}
+.slip-form input{font:inherit;font-family:var(--body);font-weight:700;font-size:16px;color:var(--ink);background:var(--surface-2);border:2px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0;width:100%}
+.slip-out{margin-top:12px;white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13.5px;font-weight:500;background:var(--surface-2);border:2px solid var(--line);border-radius:12px;padding:12px}
+@media (max-width:600px){.slip-form{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- modal ---------- */
+.modal{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:16px;background:rgba(15,26,34,.5);backdrop-filter:blur(3px)}
+.modal .box{width:min(680px,100%);max-height:calc(100vh - 32px);overflow:auto;background:var(--surface);border:2.5px solid var(--line);border-radius:var(--r-lg);box-shadow:0 8px 0 var(--shade);padding:22px}
+.modal h2{font-family:var(--display);font-weight:600;font-size:24px;margin:0 0 6px}
+.modal h3{font-family:var(--display);font-weight:600;font-size:17px;margin:18px 0 6px}
+.modal p,.modal li{color:var(--ink);font-size:15.5px}
+.modal ul{padding-left:20px;margin:6px 0}
+.map{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:8px}
+.map th,.map td{text-align:left;padding:8px 10px;border-bottom:1.5px solid var(--star-off);vertical-align:top}
+.map th{font-family:var(--display);font-weight:600;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+.warn{margin-top:16px;padding:12px 14px;border-radius:14px;background:var(--hint-bg);color:var(--hint-ink);font-size:14.5px}
+.toast{position:fixed;left:50%;top:18px;z-index:60;transform:translateX(-50%);padding:9px 16px;border-radius:99px;background:var(--ink);color:var(--ground);font-family:var(--display);font-weight:600;animation:toast 2s ease forwards;pointer-events:none}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,-14px)}12%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ================= HOME ================= -->
+<main id="home">
+  <div class="top">
+    <div class="brand"><b>ESL</b>IGCSE skills practice</div>
+    <button class="icon-btn" id="theme-btn" aria-label="Switch light or dark mode" title="Light / dark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+  <section class="hero">
+    <div>
+      <h1>ESL Skills <span>Sampler</span></h1>
+      <p>Exam-style reading and writing practice for Cambridge IGCSE English as a Second Language (0510) learners. Read an original text, answer, and learn <i>why</i> each answer is right.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="parade" id="parade" aria-hidden="true"></div>
+  </section>
+
+  <div class="sec-h">
+    <h2>Choose a skill</h2>
+    <p>4 reading sets · 1 writing set · 8 questions each</p>
+  </div>
+  <div class="grid" id="sets"></div>
+
+  <section class="teacher">
+    <div>
+      <h3>For teachers</h3>
+      <p>See how each set maps to Reading &amp; Writing skills, and how to use it in an online lesson.</p>
+    </div>
+    <button class="btn" id="teacher-btn">Teacher notes</button>
+  </section>
+
+  <footer class="foot">
+    <div class="keys"><kbd>A</kbd>–<kbd>D</kbd> answer <kbd>H</kbd> hint <kbd>T</kbd> show text <kbd>Enter</kbd> next</div>
+    <p class="note"><b>Not official Cambridge material.</b> Original exam-style practice written for learners of Cambridge IGCSE English as a Second Language. Not affiliated with or endorsed by Cambridge University Press &amp; Assessment. All texts, people and places are fictional. Always check the current 0510 syllabus and specimen papers for exact exam formats.</p>
+    <p class="note"><b>Privacy:</b> your scores are saved in <b>this browser only</b>. Nothing is sent anywhere, and result slips are only shared if you copy them yourself.</p>
+    <p>made with <span class="heart">❤️</span> by Izanin Sofya</p>
+  </footer>
+</main>
+
+<!-- ================= QUIZ ================= -->
+<main id="quiz" hidden>
+  <div class="qbar">
+    <button class="icon-btn" id="quit-btn" aria-label="Back to all sets">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="qtitle"><span id="q-skill"></span><strong id="q-title"></strong></div>
+    <div class="counters"><span class="pill good" id="c-good">✓ 0</span><span class="pill bad" id="c-bad">✗ 0</span></div>
+  </div>
+  <div class="segbar" id="segbar"></div>
+  <div class="qlayout" id="qlayout">
+    <aside class="text" id="text"></aside>
+    <section class="qside">
+      <div class="buddy"><div class="mascot-box" id="q-mascot"></div><div class="bubble" id="bubble"></div></div>
+      <article class="qcard" id="qcard" aria-live="polite"></article>
+      <div class="qnav">
+        <button class="btn ghost" id="prev-btn">← Back</button>
+        <span class="tip"><kbd>A</kbd>–<kbd>D</kbd> to answer</span>
+        <button class="btn primary" id="next-btn" disabled>Next →</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- ================= RESULT ================= -->
+<main id="result" class="result" hidden>
+  <div class="qbar">
+    <button class="icon-btn" id="home-btn" aria-label="Back to all sets">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="qtitle"><span id="r-skill"></span><strong id="r-title"></strong></div>
+  </div>
+  <section class="rhero">
+    <div class="mascot-box" id="r-mascot"></div>
+    <div>
+      <h2 id="r-head"></h2>
+      <p class="msg" id="r-msg"></p>
+      <div class="score-row">
+        <div class="ring"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="fill" id="r-ring" cx="60" cy="60" r="50"/></svg><div class="val" id="r-val"></div></div>
+        <div class="rstars" id="r-stars"></div>
+      </div>
+    </div>
+  </section>
+  <div class="ractions">
+    <button class="btn primary" id="retry-miss">Retry my mistakes</button>
+    <button class="btn" id="retry-all">Play again</button>
+    <button class="btn ghost" id="next-set"></button>
+  </div>
+
+  <section class="slip">
+    <h3>Result slip</h3>
+    <p>Add your name and class, then copy the slip to send to your teacher.</p>
+    <div class="slip-form">
+      <label>Name<input id="slip-name" autocomplete="name" maxlength="60"></label>
+      <label>Class<input id="slip-class" maxlength="30"></label>
+      <button class="btn" id="slip-copy">Copy slip</button>
+    </div>
+    <div class="slip-out" id="slip-out"></div>
+  </section>
+
+  <div class="review-h">
+    <h3>Review</h3>
+    <div class="seg" role="group" aria-label="Filter review">
+      <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="miss">Mistakes only</button>
+    </div>
+  </div>
+  <ul class="review" id="review"></ul>
+</main>
+</div>
+
+<!-- ================= TEACHER NOTES ================= -->
+<div class="modal" id="teacher" hidden role="dialog" aria-modal="true" aria-labelledby="t-h">
+  <div class="box">
+    <h2 id="t-h">Teacher notes</h2>
+    <p>Each set practises one skill area from the Reading &amp; Writing paper. Use a set as a 10–15 minute warm-up, a homework check, or a screen-shared discussion in an online lesson.</p>
+    <table class="map">
+      <thead><tr><th>Set</th><th>Skill practised</th><th>Exam-style link</th></tr></thead>
+      <tbody id="t-map"></tbody>
+    </table>
+    <h3>In an online lesson</h3>
+    <ul>
+      <li><b>Before:</b> share the set link. Students read the text first, without the questions.</li>
+      <li><b>During:</b> students answer alone, then the class discusses the distractors. Each explanation names the trap.</li>
+      <li><b>After:</b> students copy their result slip into the class chat, so you can see which skills need more work.</li>
+      <li><b>Extension:</b> after "Write It Right", students write the full email, article or review themselves.</li>
+    </ul>
+    <p class="warn"><b>Check before teaching:</b> exercise numbers, word counts and mark schemes can change between syllabus years. Match each set to the current Cambridge 0510 syllabus and specimen papers. The multiple-choice format here practises the reading skill. In the real exam, some tasks need short written answers.</p>
+    <div style="text-align:right;margin-top:14px"><button class="btn primary" id="teacher-close">Close</button></div>
+  </div>
+</div>
+
+<script>
+/* ============ CONTENT ============
+   Every text, person and place below is fictional and original.
+   In each question the correct option is option[a] (a defaults to 0).
+   Options are shuffled at play time unless the set has fixed: true. */
+const SETS = [
+{
+  id: "scan", mascot: "owl", buddy: "Ollie", color: "#F9C74F",
+  skill: "Reading", focus: "Finding specific details",
+  title: "The Summer Reading Challenge",
+  blurb: "Scan a library notice for exact details, and avoid the dates and numbers that look right but aren't.",
+  intro: "Hoot! Scan for the exact detail the question asks for.",
+  passage: {
+    kind: "notice", title: "Greenfield Library: Summer Reading Challenge",
+    paras: [
+      "Join our Summer Reading Challenge, open to all readers aged 11 to 16. The challenge runs from 1 July to 31 August.",
+      "To take part, sign up at the front desk or on the library website. You will need your library card number.",
+      "Read any six books during the summer. At least two of them must be non-fiction. After each book, write a short review of no more than 100 words in your reading log.",
+      "Bring your completed log to the library by 5 September. Every reader who finishes receives a certificate, and the three most imaginative reviews will be printed in the October issue of the town newsletter.",
+      "This year, for the first time, audiobooks count towards your total, but only one of your six books may be an audiobook.",
+      "Readers aged 15 and over can also apply to help run storytelling sessions for younger children on Saturday mornings.",
+      "Questions? Email our children's librarian, Ms Farah Lim, using the address on our website."
+    ]
+  },
+  q: [
+    { q: "Who can take part in the challenge?",
+      o: ["Readers aged 11 to 16", "Anyone with a library card", "Children under 11 with a parent", "Only readers aged 15 and over"],
+      h: "Look at the very first sentence of the notice.",
+      e: "The notice says the challenge is open to readers aged 11 to 16. Age 15 is a trap: it's for the storytelling volunteers, a different activity." },
+    { q: "What do you need when you sign up?",
+      o: ["Your library card number", "A completed reading log", "Permission from a parent", "A list of your six books"],
+      h: "Find the paragraph about signing up.",
+      e: "Paragraph 2: 'You will need your library card number.' The reading log comes later, after you have read the books." },
+    { q: "What is the smallest number of non-fiction books you must read?",
+      o: ["Two", "One", "Six", "Three"],
+      h: "Look for the words 'at least'.",
+      e: "'At least two of them must be non-fiction.' Six is the total number of books, and one is the audiobook limit." },
+    { q: "What is the longest a review can be?",
+      o: ["100 words", "One page", "50 words", "There is no limit"],
+      h: "'No more than' tells you the maximum.",
+      e: "Each review must be 'no more than 100 words'. When a question asks for the longest or the most, look for limits like 'no more than' or 'up to'." },
+    { q: "By what date must you return your reading log?",
+      o: ["5 September", "31 August", "1 July", "1 October"],
+      h: "Two dates are close together. Which one is about returning the log?",
+      e: "The log is due by 5 September. 31 August is when the reading challenge ends, a classic distractor. Always match the date to the action in the question." },
+    { q: "What will happen to the three most imaginative reviews?",
+      o: ["They will be printed in the town newsletter", "Their writers will win new books", "They will be read aloud on Saturdays", "They will be shown on the library website"],
+      h: "Look at the paragraph that mentions a certificate.",
+      e: "They will be printed in the October issue of the town newsletter. Every finisher gets a certificate, but that is not the special reward for the best reviews." },
+    { q: "What is different about this year's challenge?",
+      o: ["Audiobooks count towards the total", "Readers must write longer reviews", "The challenge lasts longer", "Older readers can now take part"],
+      h: "Look for the phrase 'for the first time'.",
+      e: "'This year, for the first time, audiobooks count towards your total.' The question word 'different' points you to whatever is new." },
+    { q: "How many of the six books can be audiobooks?",
+      o: ["One", "Two", "Six", "None"],
+      h: "The rule about audiobooks has a 'but'.",
+      e: "'Only one of your six books may be an audiobook.' The word 'but' often introduces the condition a question is really testing." }
+  ]
+},
+{
+  id: "match", mascot: "bunny", buddy: "Momo", color: "#6ED3A8", fixed: true,
+  skill: "Reading", focus: "Matching across texts",
+  title: "Learning Something New",
+  blurb: "Four teenagers describe teaching themselves a skill online. Decide who says what, even when the wording is different.",
+  intro: "Hop between the four texts. The same idea can be worded differently!",
+  passage: {
+    kind: "matching", title: "Four young people describe learning a new skill online.",
+    people: [
+      { label: "A", name: "Aiman", skill: "cooking",
+        text: "I started watching cooking videos during the school holidays because I was bored. At first I copied every recipe exactly, but now I change them to suit what we have at home. My biggest problem was the cost of ingredients, so I learned to plan meals for the whole week and shop with a list. These days my family asks me to cook dinner every Friday, which I secretly love." },
+      { label: "B", name: "Leila", skill: "coding",
+        text: "My cousin showed me a free coding course, and I nearly gave up after the first week because the error messages made me feel stupid. What helped was joining an online group where beginners share their mistakes and laugh about them. I realised everyone gets stuck. Next year I want to enter a coding competition, although I'm nervous about the time limit." },
+      { label: "C", name: "Daniel", skill: "guitar",
+        text: "I'd always wanted to play the guitar, and online lessons are much cheaper than a private teacher. The problem is that nobody corrects you, and after a month I had a sore wrist from holding the guitar badly. Now I film myself and compare my position with the video. I practise for twenty minutes before school, which suits me better than long sessions at the weekend." },
+      { label: "D", name: "Mei Ling", skill: "photography",
+        text: "I borrowed my mother's old camera, but the tutorials I found were far too technical. In the end I learned much more by experimenting with light in our garden at different times of day. One of my photos was chosen for a school exhibition, which I never expected. Next, I'd like to take a short course in person, because I miss getting feedback face to face." }
+    ]
+  },
+  matchOptions: ["Aiman", "Leila", "Daniel", "Mei Ling"],
+  q: [
+    { q: "Which person changed the way they practise because of a physical problem?", a: 2,
+      h: "Look for a part of the body.",
+      e: "Daniel (C) got a sore wrist, so now he films himself and checks his position against the video." },
+    { q: "Which person learned more by trying things out than by following instructions?", a: 3,
+      h: "Who found the tutorials unhelpful?",
+      e: "Mei Ling (D) found the tutorials too technical and 'learned much more by experimenting'. Aiman (A) changes recipes, but he still learned by copying them first." },
+    { q: "Which person found support from other learners?", a: 1,
+      h: "Who joined a group?",
+      e: "Leila (B) joined an online group where beginners share their mistakes, and that helped her keep going." },
+    { q: "Which person had to deal with the cost of materials?", a: 0,
+      h: "Materials are what you need to do the activity, not the lessons themselves.",
+      e: "Aiman (A) says ingredients were expensive, so he planned his meals. Daniel (C) mentions money too, but he means lessons being cheap, not the cost of materials." },
+    { q: "Which person is now regularly asked to use their skill by relatives?", a: 0,
+      h: "'Regularly' suggests something that happens every week.",
+      e: "Aiman's (A) family asks him to cook every Friday. 'Relatives' paraphrases 'family', so the question uses different words from the text." },
+    { q: "Which person would like to learn with a teacher in the same room?", a: 3,
+      h: "'In the same room' is another way of saying something in the text.",
+      e: "Mei Ling (D) wants a course 'in person' because she misses feedback 'face to face'. Daniel (C) mentions a private teacher only to compare costs." },
+    { q: "Which person almost stopped at the beginning?", a: 1,
+      h: "Find a phrase that means 'almost quit'.",
+      e: "Leila (B) 'nearly gave up after the first week'. In the question, 'almost stopped' is a paraphrase of 'nearly gave up'." },
+    { q: "Which person prefers short, regular practice sessions?", a: 2,
+      h: "Who mentions a number of minutes?",
+      e: "Daniel (C) practises for twenty minutes before school, which suits him better than long weekend sessions." }
+  ]
+},
+{
+  id: "notes", mascot: "turtle", buddy: "Penyu", color: "#8CCB5E",
+  skill: "Reading", focus: "Completing notes",
+  title: "The Turtle Guardians",
+  blurb: "Read an article about a beach conservation project and choose the note that fits each heading: short, accurate and on topic.",
+  intro: "Good notes are short, accurate and under the right heading!",
+  passage: {
+    kind: "article", title: "The Turtle Guardians of Pulau Lindung",
+    paras: [
+      "Every year between April and September, green turtles return to the quiet beaches of Pulau Lindung, a small island off the east coast of Malaysia, to lay their eggs. Twenty years ago, local fishermen counted fewer than fifty nests a season. Turtle eggs were sold in markets, bright lights from new beach resorts confused the hatchlings, and plastic waste washed up on the sand.",
+      "In 2009, a group of teachers from the island's secondary school set up a project called Penjaga Penyu, or 'turtle guardians'. Their first step was simple: they paid fishermen a fair price for any eggs they found, so the eggs no longer reached the market. The eggs were then moved to a hatchery, fenced off to keep out dogs and monitor lizards.",
+      "Today, the project relies on about forty volunteers each season, many of them teenagers. Volunteers patrol the beach at night and record the size of each mother turtle. They release the hatchlings at the water's edge just before sunrise, when fewer birds are hunting. During the day, they collect rubbish and give short talks to tourists about switching off balcony lights.",
+      "The results have been encouraging. Last season, volunteers recorded 312 nests, and around 70 percent of the eggs in the hatchery produced healthy hatchlings. The resorts have also agreed to use low, orange-coloured lighting after 10 p.m.",
+      "However, the project's leader, Cikgu Rahim, warns that rising sea temperatures are a new challenge, because warmer sand produces far more female turtles than male ones. 'We can stop people taking eggs,' he says, 'but we cannot cool the ocean on our own.'"
+    ]
+  },
+  q: [
+    { ctx: "Threats to turtles twenty years ago", q: "Choose the best note for this heading.",
+      o: ["eggs sold in markets", "warmer sand", "monitor lizards in the hatchery", "fishermen catching turtles"],
+      h: "The heading is about the past. Look at the end of paragraph 1.",
+      e: "Paragraph 1 says eggs were sold in markets. Warmer sand is a new challenge, so it belongs under a different heading. The hatchery keeps lizards out, and the text never says fishermen caught turtles." },
+    { ctx: "Threats to turtles twenty years ago", q: "Choose another note for this heading.",
+      o: ["resort lights confused hatchlings", "orange lighting after 10 p.m.", "too many tourist talks", "birds hunting before sunrise"],
+      h: "One option is actually a solution, not a threat.",
+      e: "Bright lights from new resorts confused the hatchlings. Orange lighting is part of the solution. The text says fewer birds hunt before sunrise, so that is not a threat." },
+    { ctx: "How the project first protected the eggs", q: "Choose the best note for this heading.",
+      o: ["bought eggs from fishermen at a fair price", "banned fishing near the beach", "sold eggs to fund the project", "asked tourists to report nests"],
+      h: "Look for 'Their first step'.",
+      e: "'They paid fishermen a fair price for any eggs they found', so the eggs never reached the market. None of the other actions appear in the text." },
+    { ctx: "How the project first protected the eggs", q: "Choose another note for this heading.",
+      o: ["moved eggs to a fenced hatchery", "fenced the whole beach from tourists", "kept eggs in the school", "covered nests with plastic"],
+      h: "Where did the eggs go after they were bought?",
+      e: "The eggs were moved to a hatchery fenced off to keep out dogs and monitor lizards. The fence protects against animals, not tourists." },
+    { ctx: "Volunteers' night-time tasks", q: "Choose the best note for this heading.",
+      o: ["record size of mother turtles", "collect rubbish", "give talks to tourists", "feed the hatchlings"],
+      h: "Some tasks happen during the day, and the heading says night-time.",
+      e: "At night, volunteers patrol and record the size of each mother turtle. Collecting rubbish and giving talks are daytime tasks. Check every note against the heading, not just against the text." },
+    { ctx: "Volunteers' night-time tasks", q: "Why are hatchlings released just before sunrise?",
+      o: ["fewer birds hunting", "water is warmer", "tourists are asleep", "resort lights are off"],
+      h: "The reason is in the same sentence as 'sunrise'.",
+      e: "The hatchlings are released before sunrise 'when fewer birds are hunting'. The other reasons sound sensible, but the text doesn't give them. Only note what the text says." },
+    { ctx: "Results last season", q: "Choose the best note for this heading.",
+      o: ["about 70% of hatchery eggs hatched", "312 hatchlings released", "70% of nests protected", "40 new volunteers"],
+      h: "Read the numbers carefully. What does each one count?",
+      e: "Around 70 percent of the eggs in the hatchery produced healthy hatchlings. 312 is the number of nests, not hatchlings, and 40 is the usual number of volunteers, not new ones. Copying a number is not enough. Check what it measures." },
+    { ctx: "The project's new challenge", q: "Choose the best note for this heading.",
+      o: ["warmer sand → more female turtles", "plastic waste on beaches", "not enough volunteers", "resorts refusing to cooperate"],
+      h: "Look for 'a new challenge' in the last paragraph.",
+      e: "Rising sea temperatures make the sand warmer, which produces far more females than males. Plastic waste was a problem before. The resorts have agreed to cooperate." }
+  ]
+},
+{
+  id: "opinion", mascot: "cat", buddy: "Mochi", color: "#C9B8FF",
+  skill: "Reading", focus: "Opinions, attitudes & word meaning",
+  title: "Our Phone-Free School Day",
+  blurb: "A student journalist reports on a new school rule. Work out what each person thinks, and what words mean in context.",
+  intro: "Meow~ Read between the lines. How does each person really feel?",
+  passage: {
+    kind: "article", title: "Our Phone-Free School Day: One Term On", byline: "By a Form 4 student reporter",
+    paras: [
+      "Last term, our school became 'phone-free' from 7.30 a.m. to 2.30 p.m. Phones now go into locked pouches at the gate, and students unlock them again on the way home. I expected to hate it. I didn't, or at least not entirely.",
+      "Our principal, Puan Hamidah, admits the decision was not easy. 'Some parents worried they would not be able to reach their children in an emergency,' she told me. 'We understood that, so we made sure the school office can contact any family within minutes.' She insists the change was never about punishment. 'We simply wanted break time to be noisy again, in a good way.'",
+      "She has a point. The canteen, which used to be strangely quiet, is now full of arguments about football and plans for the weekend. My friend Arjun, who used to spend every break scrolling, has joined the chess club and claims he is 'unbeatable', which is not entirely accurate.",
+      "Not everyone is convinced, though. Mr Tan, whose daughter is in Form 2, feels the rule treats teenagers like small children. 'Part of growing up is learning to manage temptation yourself,' he argues. 'If a phone is always taken away, when do they practise?' It is a fair question, and one the school has not fully answered.",
+      "The rule has also caused some practical headaches. Teachers who once asked us to look things up online now have to book the computer lab, which is often full. And a few students have quietly started bringing a second, cheaper phone to hand in at the gate, while their real one stays hidden in their bag.",
+      "So, is the experiment working? I think it is too early to judge. The noise in the canteen suggests something has improved, but a rule that some students are already finding ways around is not yet a success. Perhaps the next step is to let older students earn back their phones for part of the day, and see who can be trusted."
+    ]
+  },
+  q: [
+    { q: "How does the writer feel about the rule now, compared with at the start?",
+      o: ["More positive than expected, but not completely", "Exactly as negative as expected", "Completely in favour of it", "Less interested in it than before"],
+      h: "Read the last three sentences of paragraph 1 closely.",
+      e: "'I expected to hate it. I didn't, or at least not entirely.' The writer feels better than expected, but still has some doubts. 'Not entirely' rules out 'completely in favour'." },
+    { q: "According to Puan Hamidah, what was the main aim of the rule?",
+      o: ["To make break time more sociable", "To punish students who misused phones", "To help parents contact their children", "To stop students cheating in tests"],
+      h: "She says what the rule was NOT about, then what it WAS about.",
+      e: "She wanted break time to be 'noisy again, in a good way', meaning more talking and socialising. She says it was 'never about punishment'. Contacting families was a worry she solved, not the aim." },
+    { q: "How does the writer react to Arjun's claim that he is 'unbeatable'?",
+      o: ["Gently doubts it, in a humorous way", "Strongly criticises him for lying", "Fully believes him", "Feels jealous of his success"],
+      h: "Think about the tone of 'not entirely accurate'.",
+      e: "'Not entirely accurate' is a polite, humorous understatement: the writer suggests Arjun does lose sometimes. Exam questions on attitude often turn on understatement like this." },
+    { q: "What is Mr Tan's main objection to the rule?",
+      o: ["Teenagers need practice controlling their own phone use", "Parents cannot contact their children", "Phones are needed for homework", "The pouches are too expensive"],
+      h: "Focus on his question at the end of his quote.",
+      e: "He argues that 'learning to manage temptation yourself' is part of growing up, and asks when teenagers can practise if the phone is always taken away. The emergency worry belonged to other parents." },
+    { q: "What does the writer think of Mr Tan's argument?",
+      o: ["It is reasonable and the school hasn't fully answered it", "It is unfair to the principal", "It only applies to younger students", "It has been completely answered by the school"],
+      h: "Look at the sentence straight after his quote.",
+      e: "'It is a fair question, and one the school has not fully answered.' The writer agrees it's reasonable without necessarily agreeing with Mr Tan." },
+    { q: "In paragraph 5, what does 'headaches' mean?",
+      o: ["Problems or difficulties", "Physical pain in the head", "Arguments between teachers", "Strict rules"],
+      h: "What follows 'headaches' in the paragraph? Booking a full computer lab...",
+      e: "Here 'headaches' is used figuratively to mean annoying problems, such as the computer lab often being full. Use the examples in the sentences that follow to work out the meaning." },
+    { q: "In paragraph 5, what does 'quietly' suggest about the students with a second phone?",
+      o: ["They are doing it without drawing attention", "They are speaking very softly", "They are doing it slowly", "They have asked permission"],
+      h: "Why would they want to keep a second phone hidden?",
+      e: "'Quietly' here means secretly, without anyone noticing. It isn't about the volume of their voices. Their real phone stays 'hidden', which supports this meaning." },
+    { q: "What is the writer's overall conclusion?",
+      o: ["It's too early to call it a success; trust could be built gradually", "The rule has completely failed and should end", "The rule is a total success", "Teachers should also hand in their phones"],
+      h: "Read the whole final paragraph, including the last suggestion.",
+      e: "The writer says it is 'too early to judge', points to one improvement and one problem, and suggests letting older students earn their phones back. That is a balanced, cautious conclusion." }
+  ]
+},
+{
+  id: "write", mascot: "robot", buddy: "Bit", color: "#9FC6EE",
+  skill: "Writing", focus: "Purpose, audience & register",
+  title: "Write It Right",
+  blurb: "Choose the sentence that suits the audience, purpose and form: emails, reports, articles, reviews and essays.",
+  intro: "Beep boop! Who is reading it, and why? That decides everything.",
+  passage: null,
+  q: [
+    { ctx: "You are writing an <b>email to your friend Sara</b>, who couldn't come on the class trip.", q: "Which is the best opening?",
+      o: ["Hi Sara! Sorry I've taken ages to reply. The last two weeks have been crazy!", "Dear Sir or Madam, I am writing to inform you about a school trip.", "To whom it may concern, the trip took place on Monday.", "Sara. School trip. It was good."],
+      h: "Sara is a friend. How would you really greet her?",
+      e: "An informal email to a friend needs a friendly, natural tone: a greeting, a personal touch and contractions like 'I've'. 'Dear Sir or Madam' and 'To whom it may concern' are for formal letters to strangers, and note-style fragments aren't full sentences." },
+    { ctx: "You are writing a <b>report for your principal</b> about a study-skills workshop.", q: "Which sentence is the most appropriate?",
+      o: ["Overall, most students found the workshop useful, although several suggested it should be longer.", "The workshop was awesome and everyone totally loved it!!", "I think it was OK but kind of long, you know?", "Workshop = good. Make it longer."],
+      h: "A report to a principal should be formal, clear and balanced.",
+      e: "A report uses a formal, objective tone and summarises the findings, including suggestions. Slang ('awesome', 'you know'), several exclamation marks and note-style fragments don't suit this audience." },
+    { ctx: "You are writing an <b>article for your school magazine</b> about reducing food waste in the canteen.", q: "Which is the most engaging opening?",
+      o: ["Have you ever wondered what happens to the rice you leave on your plate?", "This article is about food waste.", "Dear readers, I hope you are well and happy.", "Food waste. It is bad. Here are my points."],
+      h: "Articles try to hook the reader in the first line.",
+      e: "A question addressed to the reader grabs attention and fits a magazine article. Announcing 'This article is about...' is flat, 'Dear readers, I hope you are well' is a letter or email convention, and choppy fragments sound like notes." },
+    { ctx: "An email task asks you to cover <b>three bullet points</b>.", q: "What is the best way to handle them?",
+      o: ["Cover all three, developing each one with relevant detail", "Write mostly about the one you find most interesting", "Copy the bullet points as a list", "Add extra topics to show your range"],
+      h: "If a point is missing, the reader doesn't get all the information they need.",
+      e: "Develop every bullet point in connected sentences so the email is complete and serves its purpose. Leaving one out, listing them or drifting into unrelated topics all weaken the content. Check the current Cambridge mark scheme for exactly how content is assessed." },
+    { ctx: "You want to show <b>contrast</b> between two ideas.", q: "The trip was quite expensive. ________, most students said it was worth every ringgit.",
+      o: ["Nevertheless", "Therefore", "Furthermore", "For example"],
+      h: "The second idea goes against what you might expect from the first.",
+      e: "'Nevertheless' means 'despite this', so it introduces a contrast. 'Therefore' shows a result, 'Furthermore' adds a similar point, and 'For example' introduces an illustration." },
+    { ctx: "You are writing a <b>review</b> of a new café near your school for a student website.", q: "Which sentence gives a balanced opinion with a reason?",
+      o: ["The noodles were delicious, but at RM18 a bowl they're hard to justify on a student budget.", "The café is good.", "I went there on Tuesday with my friends after school.", "Everyone should go there because it is the best café in the world."],
+      h: "A good review judges, gives reasons, and considers the reader.",
+      e: "This sentence gives a positive point, a negative point and a reason that matters to the readers (students' budgets). 'The café is good' has no reason, the Tuesday sentence is just narrative, and 'best in the world' is an unsupported exaggeration." },
+    { ctx: "You are writing an <b>essay</b>: 'Should homework be banned?' This paragraph argues <b>against</b> a ban.", q: "Which is the best opening sentence for the paragraph?",
+      o: ["One strong reason to keep homework is that it lets students practise skills on their own.", "Homework is boring and nobody likes it.", "In conclusion, homework should be banned.", "My little brother has lots of homework."],
+      h: "A topic sentence states the paragraph's main point clearly.",
+      e: "A strong topic sentence states the argument the paragraph will develop. The 'boring' sentence argues the opposite side, 'In conclusion' belongs at the end of an essay, and the brother sentence is an anecdote with no clear point." },
+    { ctx: "You are ending your <b>email to your friend Sara</b>.", q: "Which is the best ending?",
+      o: ["Can't wait to hear what you think. Write back soon! Love, Mei", "Yours faithfully, Mei", "I look forward to your prompt response regarding this matter.", "End of email."],
+      h: "Match the ending to the friendly opening.",
+      e: "An informal email ends warmly and personally. 'Yours faithfully' is for formal letters to someone whose name you don't know, and 'prompt response regarding this matter' is business language. Keep the register the same from start to finish." }
+  ]
+}
+];
+
+
+/* ============ MASCOTS ============
+   Every buddy is built from simple shapes plus a shared face that can switch
+   mood through CSS classes on the <svg>: "" (idle), "happy" or "sad". */
+const INK = "#2A2148";
+const OL = `stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"`;
+
+function face(o) {
+  const [lx, rx] = o.ex || [46, 74];
+  const ey = o.ey, my = o.my, ink = o.ink || INK;
+  let s = "";
+  s += `<g class="eyes-open"><circle cx="${lx}" cy="${ey}" r="5.6" fill="${ink}"/><circle cx="${rx}" cy="${ey}" r="5.6" fill="${ink}"/>` +
+       `<circle cx="${lx + 1.9}" cy="${ey - 2}" r="1.9" fill="#fff"/><circle cx="${rx + 1.9}" cy="${ey - 2}" r="1.9" fill="#fff"/></g>`;
+  s += `<g class="eyes-happy" fill="none" stroke="${ink}" stroke-width="3.2" stroke-linecap="round">` +
+       `<path d="M${lx - 5.5} ${ey + 2}Q${lx} ${ey - 6} ${lx + 5.5} ${ey + 2}"/><path d="M${rx - 5.5} ${ey + 2}Q${rx} ${ey - 6} ${rx + 5.5} ${ey + 2}"/></g>`;
+  s += `<g class="brows" fill="none" stroke="${ink}" stroke-width="2.6" stroke-linecap="round">` +
+       `<path d="M${lx - 6} ${ey - 9}L${lx + 5} ${ey - 13}"/><path d="M${rx - 5} ${ey - 13}L${rx + 6} ${ey - 9}"/></g>`;
+  if (o.cheeks !== false)
+    s += `<ellipse cx="${lx - 7}" cy="${ey + 9}" rx="6" ry="3.6" fill="#FF7FA3" opacity=".5"/><ellipse cx="${rx + 7}" cy="${ey + 9}" rx="6" ry="3.6" fill="#FF7FA3" opacity=".5"/>`;
+  if (o.beak) {
+    const closed = `<path d="M54 ${my - 4}L66 ${my - 4}L60 ${my + 4}Z" fill="#FFB02E" ${OL}/>`;
+    s += `<g class="m-idle">${closed}</g><g class="m-sad">${closed}</g>`;
+    s += `<g class="m-happy"><path d="M53 ${my - 6}L67 ${my - 6}L60 ${my - 1}Z" fill="#FFB02E" ${OL}/>` +
+         `<path d="M55 ${my + 1}L65 ${my + 1}L60 ${my + 8}Z" fill="#FF8A3D" ${OL}/></g>`;
+  } else {
+    s += `<path class="m-idle" d="M54 ${my}Q60 ${my + 5.5} 66 ${my}" fill="none" stroke="${ink}" stroke-width="2.8" stroke-linecap="round"/>`;
+    s += `<g class="m-happy"><path d="M51.5 ${my - 1.5}Q60 ${my + 13} 68.5 ${my - 1.5}Z" fill="${ink}" stroke="${ink}" stroke-width="2" stroke-linejoin="round"/>` +
+         `<ellipse cx="60" cy="${my + 5.2}" rx="4.2" ry="2.4" fill="#FF7FA3"/></g>`;
+    s += `<path class="m-sad" d="M54 ${my + 4}Q60 ${my - 2.5} 66 ${my + 4}" fill="none" stroke="${ink}" stroke-width="2.8" stroke-linecap="round"/>`;
+  }
+  s += `<path class="tear" d="M${lx + 3} ${ey + 7}q-3.2 5.4 0 7.4q3.2-2 0-7.4z" fill="#6CC4FF"/>`;
+  return s;
+}
+
+const FEET = (c) => `<ellipse cx="47" cy="108" rx="9" ry="4.6" fill="${c}" ${OL}/><ellipse cx="73" cy="108" rx="9" ry="4.6" fill="${c}" ${OL}/>`;
+
+const MASCOT_ART = {
+  owl: () =>
+    `<ellipse cx="25" cy="76" rx="8" ry="17" transform="rotate(14 25 76)" fill="#9C7050" ${OL}/>` +
+    `<ellipse cx="95" cy="76" rx="8" ry="17" transform="rotate(-14 95 76)" fill="#9C7050" ${OL}/>` +
+    FEET("#FFB02E") +
+    `<ellipse cx="60" cy="68" rx="38" ry="40" fill="#B98B63" ${OL}/>` +
+    `<ellipse cx="60" cy="87" rx="21" ry="17" fill="#F6E3C6"/>` +
+    `<path d="M52 82q3 3 6 0M62 82q3 3 6 0M57 90q3 3 6 0" fill="none" stroke="#C9A27E" stroke-width="2" stroke-linecap="round"/>` +
+    `<circle cx="46" cy="60" r="13" fill="#F6E3C6"/><circle cx="74" cy="60" r="13" fill="#F6E3C6"/>` +
+    face({ ey: 60, my: 71, beak: true, cheeks: false }) +
+    /* graduation cap */
+    `<path d="M44 27h32v8q-16 6-32 0z" fill="#3A2F63" ${OL}/>` +
+    `<path d="M32 24L60 13L88 24L60 35Z" fill="#3A2F63" ${OL}/>` +
+    `<path d="M60 24L84 27V38" fill="none" stroke="#F9C74F" stroke-width="2.4" stroke-linecap="round"/>` +
+    `<circle cx="84" cy="40" r="3.4" fill="#F9C74F" ${OL}/>`,
+
+  bunny: () =>
+    `<ellipse cx="44" cy="28" rx="9.5" ry="24" transform="rotate(-10 44 28)" fill="#FFF5F8" ${OL}/>` +
+    `<ellipse cx="44" cy="30" rx="4.5" ry="16" transform="rotate(-10 44 30)" fill="#FFB3C7"/>` +
+    `<ellipse cx="78" cy="30" rx="9.5" ry="24" transform="rotate(16 78 30)" fill="#FFF5F8" ${OL}/>` +
+    `<ellipse cx="78" cy="32" rx="4.5" ry="16" transform="rotate(16 78 32)" fill="#FFB3C7"/>` +
+    FEET("#FFF5F8") +
+    `<ellipse cx="60" cy="72" rx="38" ry="36" fill="#FFF5F8" ${OL}/>` +
+    /* sweatband */
+    `<path d="M23 58Q60 38 97 58L96 66Q60 47 24 66Z" fill="#6ED3A8" ${OL}/>` +
+    `<path d="M88 55l7-3M90 60l7-1" stroke="${INK}" stroke-width="2" stroke-linecap="round"/>` +
+    face({ ey: 73, my: 85 }) +
+    `<path d="M57 80.5h6l-3 2.6z" fill="#FF7FA3" stroke="${INK}" stroke-width="1.4" stroke-linejoin="round"/>`,
+
+  robot: () =>
+    `<path d="M60 24V11" stroke="${INK}" stroke-width="3" stroke-linecap="round"/>` +
+    `<circle class="antenna-bulb" cx="60" cy="9" r="5.5" fill="#FF6FA5" ${OL}/>` +
+    `<rect x="13" y="50" width="11" height="22" rx="5" fill="#9FB8D6" ${OL}/>` +
+    `<rect x="96" y="50" width="11" height="22" rx="5" fill="#9FB8D6" ${OL}/>` +
+    `<rect x="38" y="90" width="44" height="18" rx="9" fill="#9FB8D6" ${OL}/>` +
+    `<rect x="22" y="24" width="76" height="72" rx="24" fill="#D8E6F5" ${OL}/>` +
+    `<rect x="31" y="38" width="58" height="42" rx="15" fill="#243B53" ${OL}/>` +
+    face({ ey: 56, my: 67, ink: "#7FF0FF", cheeks: true }) +
+    `<circle cx="40" cy="88" r="2.6" fill="#6CB8FF"/><circle cx="48" cy="88" r="2.6" fill="#F9C74F"/><circle cx="56" cy="88" r="2.6" fill="#FF6FA5"/>`,
+
+  piggy: () =>
+    `<path d="M29 42L32 17L53 32Z" fill="#F48FAE" ${OL}/><path d="M91 42L88 17L67 32Z" fill="#F48FAE" ${OL}/>` +
+    `<rect x="38" y="96" width="12" height="14" rx="5" fill="#F48FAE" ${OL}/><rect x="70" y="96" width="12" height="14" rx="5" fill="#F48FAE" ${OL}/>` +
+    `<ellipse cx="60" cy="68" rx="41" ry="38" fill="#FFB7C9" ${OL}/>` +
+    `<rect x="51" y="33" width="18" height="4.5" rx="2.2" fill="${INK}" opacity=".55"/>` +
+    face({ ey: 60, ex: [43, 77], my: 88 }) +
+    `<ellipse cx="60" cy="75" rx="13" ry="9" fill="#F48FAE" ${OL}/>` +
+    `<ellipse cx="55.5" cy="75" rx="2.2" ry="3.2" fill="${INK}" opacity=".7"/><ellipse cx="64.5" cy="75" rx="2.2" ry="3.2" fill="${INK}" opacity=".7"/>` +
+    /* gold coin */
+    `<circle cx="99" cy="30" r="9" fill="#FFC83D" ${OL}/><path d="M99 25v10M96.5 27.5h4a2.3 2.3 0 0 1 0 4.5h-3" fill="none" stroke="#B07A00" stroke-width="1.8" stroke-linecap="round"/>`,
+
+  cat: () =>
+    `<path d="M95 94q20-4 15-26q-2-7-8-5" fill="none" stroke="${INK}" stroke-width="11" stroke-linecap="round"/>` +
+    `<path d="M95 94q20-4 15-26q-2-7-8-5" fill="none" stroke="#F3EEFA" stroke-width="6" stroke-linecap="round"/>` +
+    `<path d="M26 48L31 15L55 34Z" fill="#F3EEFA" ${OL}/><path d="M94 48L89 15L65 34Z" fill="#F3EEFA" ${OL}/>` +
+    `<path d="M32 38L34 24L45 33Z" fill="#C9B8FF"/><path d="M88 38L86 24L75 33Z" fill="#C9B8FF"/>` +
+    FEET("#F3EEFA") +
+    `<ellipse cx="60" cy="70" rx="40" ry="37" fill="#F3EEFA" ${OL}/>` +
+    `<path d="M52 36l2 7M60 34v8M68 36l-2 7" stroke="#B39DFF" stroke-width="3" stroke-linecap="round"/>` +
+    face({ ey: 64, my: 79 }) +
+    `<path d="M57 72h6l-3 3z" fill="#FF7FA3" stroke="${INK}" stroke-width="1.4" stroke-linejoin="round"/>` +
+    `<path d="M29 74l-13-2M29 79l-13 3M91 74l13-2M91 79l13 3" stroke="${INK}" stroke-width="2" stroke-linecap="round"/>`,
+
+  turtle: () =>
+    `<ellipse cx="25" cy="102" rx="11" ry="7" fill="#8CCB5E" ${OL}/><ellipse cx="95" cy="102" rx="11" ry="7" fill="#8CCB5E" ${OL}/>` +
+    `<path d="M12 98Q12 52 60 52Q108 52 108 98Z" fill="#4E9A3A" ${OL}/>` +
+    `<path d="M26 96l8-20h16l8 20M62 96l8-20h16l8 20M40 76l6-14M80 76l-6-14" fill="none" stroke="#7CC05C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>` +
+    `<circle cx="60" cy="52" r="31" fill="#8CCB5E" ${OL}/>` +
+    /* leaf sprout */
+    `<path d="M60 22V12" stroke="${INK}" stroke-width="2.6" stroke-linecap="round"/>` +
+    `<path d="M60 13C54 3 41 5 43 14C49 17 56 17 60 13Z" fill="#6DC24F" ${OL}/>` +
+    `<path d="M60 13C66 1 81 4 78 13C71 17 64 17 60 13Z" fill="#8FD16F" ${OL}/>` +
+    face({ ey: 55, my: 66 })
+};
+
+function mascotSVG(kind, mood, label) {
+  const art = MASCOT_ART[kind] || MASCOT_ART.owl;
+  return `<svg class="mascot ${mood || ""}" viewBox="0 0 120 120" role="img" aria-label="${label || kind}">` +
+    `<ellipse cx="60" cy="114" rx="32" ry="4.5" fill="${INK}" opacity=".13"/>` +
+    `<g class="bobber">${art()}</g></svg>`;
+}
+
+
+/* ============ APP ============ */
+const $ = (id) => document.getElementById(id);
+const LETTERS = "ABCD";
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+const BANK = SETS.map((s) => Object.assign({}, s, {
+  q: s.q.map((Q) => Object.assign({ a: 0 }, Q, s.fixed ? { o: s.matchOptions } : {}))
+}));
+const TOTAL_Q = BANK.reduce((n, s) => n + s.q.length, 0);
+const TASK_LINK = {
+  scan: "Short-answer comprehension: locating exact details",
+  match: "Multiple matching across linked texts",
+  notes: "Note completion from a longer text",
+  opinion: "Multiple choice on opinions and attitudes; meaning from context",
+  write: "Writing tasks: purpose, audience, register and form"
+};
+
+/* ---- storage: per-viewer convenience only, safe if unavailable ---- */
+const KEY = "igcse-esl-sampler-v1";
+function loadStore() { try { return JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { return {}; } }
+function saveStore(s) { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) {} }
+let STORE = loadStore();
+STORE.best = STORE.best || {};
+
+/* ---- theme ---- */
+function applyTheme(t) { if (t) document.documentElement.setAttribute("data-theme", t); else document.documentElement.removeAttribute("data-theme"); }
+applyTheme(STORE.theme);
+$("theme-btn").onclick = () => {
+  const dark = STORE.theme ? STORE.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  STORE.theme = dark ? "light" : "dark"; applyTheme(STORE.theme); saveStore(STORE);
+};
+
+/* ---- stars ---- */
+const starsFor = (got, n) => { const p = got / n; return p >= 0.9 ? 3 : p >= 0.7 ? 2 : p >= 0.5 ? 1 : 0; };
+const STAR = (on, cls = "") => `<svg class="${cls}" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.7 6.3.9-4.6 4.4 1.1 6.2L12 17l-5.6 3 1.1-6.2L2.9 9.4l6.3-.9z" fill="${on ? "var(--star)" : "var(--star-off)"}" stroke="var(--star-stroke)" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
+
+/* ---- home ---- */
+function renderHome() {
+  $("parade").innerHTML = BANK.map((s, i) => `<div class="p" style="animation-delay:${150 + i * 80}ms">${mascotSVG(s.mascot, "", s.buddy)}</div>`).join("");
+  const done = BANK.filter((s) => STORE.best[s.id] != null).length;
+  const stars = BANK.reduce((n, s) => n + (STORE.best[s.id] != null ? starsFor(STORE.best[s.id], s.q.length) : 0), 0);
+  $("stats").innerHTML =
+    `<span class="chip"><b>${TOTAL_Q}</b> questions</span>` +
+    `<span class="chip">Sets tried <b>${done}/${BANK.length}</b></span>` +
+    `<span class="chip">Stars <b>${stars}/${BANK.length * 3}</b></span>`;
+  $("sets").innerHTML = BANK.map((s, i) => {
+    const b = STORE.best[s.id];
+    const st = b != null ? starsFor(b, s.q.length) : -1;
+    return `<button class="card" data-i="${i}" style="--c:${s.color}">
+      <span class="face">${mascotSVG(s.mascot, "", s.buddy)}</span>
+      <span>
+        <span class="num">Set ${i + 1} · ${esc(s.skill)}</span>
+        <h3>${esc(s.title)}</h3>
+        <p>${esc(s.blurb)}</p>
+        <span class="meta"><span class="tag" style="--c:${s.color}">${esc(s.focus)}</span>
+        ${st >= 0 ? `<span class="mini-stars" aria-label="${st} of 3 stars">${[0, 1, 2].map((k) => STAR(k < st)).join("")}</span>` : ""}</span>
+      </span></button>`;
+  }).join("");
+  $("sets").querySelectorAll(".card").forEach((c) => (c.onclick = () => startSet(+c.dataset.i)));
+}
+
+/* ---- screens ---- */
+function show(id) { ["home", "quiz", "result"].forEach((k) => ($(k).hidden = k !== id)); window.scrollTo(0, 0); }
+
+/* ---- quiz state ---- */
+let S = null;
+function startSet(si, onlyIdx) {
+  const set = BANK[si];
+  const idx = onlyIdx && onlyIdx.length ? onlyIdx : set.q.map((_, i) => i);
+  S = {
+    si, set, items: idx.map((qi) => {
+      const Q = set.q[qi];
+      const order = set.fixed ? [0, 1, 2, 3] : shuffle([0, 1, 2, 3]);
+      return { qi, Q, order, picked: null, hint: false };
+    }), cur: 0, retry: !!(onlyIdx && onlyIdx.length)
+  };
+  document.documentElement.style.setProperty("--set", set.color);
+  $("q-skill").textContent = `Set ${si + 1} · ${set.skill}: ${set.focus}`;
+  $("q-title").textContent = set.title + (S.retry ? " (mistakes)" : "");
+  $("q-mascot").innerHTML = mascotSVG(set.mascot, "", set.buddy);
+  renderText(set);
+  say(set.intro);
+  show("quiz");
+  renderQ(true);
+}
+
+function renderText(set) {
+  const box = $("text"), lay = $("qlayout");
+  if (!set.passage) { box.hidden = true; lay.classList.add("solo"); return; }
+  box.hidden = false; lay.classList.remove("solo");
+  const P = set.passage;
+  let body = `<h2>${esc(P.title)}</h2>` + (P.byline ? `<p class="by">${esc(P.byline)}</p>` : "");
+  if (P.people) {
+    body += P.people.map((p) => `<div class="person"><h3><span class="lbl">${p.label}</span>${esc(p.name)} <small>· ${esc(p.skill)}</small></h3><p>${esc(p.text)}</p></div>`).join("");
+  } else {
+    const ps = P.paras.map((t, i) => `<p><span class="pn">${i + 1}</span>${esc(t)}</p>`).join("");
+    body += P.kind === "notice" ? `<div class="notice">${ps}</div>` : ps;
+  }
+  const narrow = matchMedia("(max-width:860px)").matches;
+  box.innerHTML = `<details id="text-d" ${narrow ? "" : "open"}><summary>Text<span class="tog"><span class="tog-open">Show text</span><span class="tog-close">Hide text</span></span></summary>${body}</details>`;
+  if (narrow) $("text-d").open = true;
+}
+
+function say(msg) { const b = $("bubble"); b.textContent = msg; b.classList.remove("say"); void b.offsetWidth; b.classList.add("say"); }
+
+function renderQ(enter) {
+  const it = S.items[S.cur], Q = it.Q, n = S.items.length;
+  $("segbar").innerHTML = S.items.map((x, i) => `<i class="${i === S.cur ? "cur " : ""}${x.picked == null ? "" : x.picked === x.Q.a ? "ok" : "no"}"></i>`).join("");
+  const good = S.items.filter((x) => x.picked != null && x.picked === x.Q.a).length;
+  const bad = S.items.filter((x) => x.picked != null && x.picked !== x.Q.a).length;
+  $("c-good").textContent = "✓ " + good; $("c-bad").textContent = "✗ " + bad;
+  const answered = it.picked != null;
+  const opts = it.order.map((oi, k) => {
+    let cls = "opt";
+    if (answered) { if (oi === Q.a) cls += " correct"; else if (oi === it.picked) cls += " wrong"; else cls += " dim"; }
+    return `<button class="${cls}" data-oi="${oi}" ${answered ? "disabled" : ""}><span class="letter">${LETTERS[k]}</span><span class="otext">${esc(Q.o[oi])}</span></button>`;
+  }).join("");
+  const ctx = Q.ctx ? `<p class="ctx"><span class="k">${S.set.id === "write" ? "Task" : "Note heading"}</span>${S.set.id === "write" ? Q.ctx : esc(Q.ctx)}</p>` : "";
+  const fb = answered
+    ? `<div class="feedback ${it.picked === Q.a ? "" : "miss"}"><b>${it.picked === Q.a ? "Correct!" : "Not quite. The answer is “" + (S.set.fixed ? LETTERS[Q.a] + " · " : "") + esc(Q.o[Q.a]) + "”."}</b><p>${esc(Q.e)}</p></div>` : "";
+  const hint = it.hint ? `<p class="hint">💡 ${esc(Q.h)}</p>` : "";
+  $("qcard").innerHTML =
+    `<div class="qhead"><p class="qnum">Question ${S.cur + 1} of ${n}</p></div>${ctx}
+     <p class="stem">${esc(Q.q)}</p><div class="options">${opts}</div>
+     ${answered || it.hint ? "" : `<button class="hint-btn" id="hint-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>Show hint</button>`}
+     ${hint}${fb}`;
+  if (enter) { const c = $("qcard"); c.classList.remove("enter"); void c.offsetWidth; c.classList.add("enter"); }
+  $("qcard").querySelectorAll(".opt").forEach((b) => (b.onclick = () => answer(+b.dataset.oi)));
+  const hb = $("hint-btn"); if (hb) hb.onclick = showHint;
+  $("prev-btn").disabled = S.cur === 0;
+  $("next-btn").disabled = !answered;
+  $("next-btn").textContent = S.cur === n - 1 ? "See results →" : "Next →";
+}
+
+function showHint() { const it = S.items[S.cur]; if (it.picked != null || it.hint) return; it.hint = true; renderQ(false); }
+
+function answer(oi) {
+  const it = S.items[S.cur]; if (it.picked != null) return;
+  it.picked = oi;
+  const ok = oi === it.Q.a;
+  const svg = $("q-mascot").querySelector("svg.mascot");
+  if (svg) { svg.classList.remove("happy", "sad"); void svg.getBoundingClientRect(); svg.classList.add(ok ? "happy" : "sad"); }
+  say(ok ? pickMsg(["Spot on!", "Yes! That's it.", "Nicely read!", "Exactly right!"]) : pickMsg(["Close! Check the explanation.", "Tricky one. Read why below.", "That's a classic trap!"]));
+  renderQ(false);
+  $("next-btn").focus({ preventScroll: true });
+}
+const pickMsg = (a) => a[Math.floor(Math.random() * a.length)];
+
+function next() {
+  const it = S.items[S.cur]; if (it.picked == null) return;
+  if (S.cur < S.items.length - 1) {
+    S.cur++;
+    const d = $("text-d");
+    if (d && S.cur === 1 && matchMedia("(max-width:860px)").matches) d.open = false;
+    const svg = $("q-mascot").querySelector("svg.mascot"); if (svg) svg.classList.remove("happy", "sad");
+    say(S.set.intro); renderQ(true); window.scrollTo({ top: 0, behavior: "smooth" });
+  } else finish();
+}
+function prev() { if (S.cur > 0) { S.cur--; renderQ(true); } }
+$("next-btn").onclick = next; $("prev-btn").onclick = prev;
+$("quit-btn").onclick = () => { renderHome(); show("home"); };
+
+/* ---- results ---- */
+let RFILTER = "all";
+function finish() {
+  const set = S.set, n = S.items.length;
+  const got = S.items.filter((x) => x.picked === x.Q.a).length;
+  if (!S.retry) { const prevBest = STORE.best[set.id]; if (prevBest == null || got > prevBest) { STORE.best[set.id] = got; saveStore(STORE); } }
+  const st = starsFor(got, n);
+  $("r-skill").textContent = `Set ${S.si + 1} · ${set.skill}: ${set.focus}`;
+  $("r-title").textContent = set.title + (S.retry ? " (mistakes)" : "");
+  $("r-mascot").innerHTML = mascotSVG(set.mascot, st >= 2 ? "happy" : st === 0 ? "sad" : "", set.buddy);
+  $("r-head").textContent = st === 3 ? "Excellent reading!" : st === 2 ? "Great work!" : st === 1 ? "Good effort!" : "Keep practising!";
+  $("r-msg").textContent = got === n ? "Every answer right. Try another skill?" : `Review the ${n - got} you missed. Each explanation shows the trap.`;
+  $("r-val").innerHTML = `<span>${got}<small>/${n}</small></span>`;
+  const ring = $("r-ring"), C = 2 * Math.PI * 50;
+  ring.style.strokeDasharray = C; ring.style.strokeDashoffset = C; requestAnimationFrame(() => requestAnimationFrame(() => (ring.style.strokeDashoffset = C * (1 - got / n))));
+  $("r-stars").innerHTML = [0, 1, 2].map((k) => STAR(k < st, "s")).join("");
+  const missIdx = S.items.filter((x) => x.picked !== x.Q.a).map((x) => x.qi);
+  $("retry-miss").hidden = missIdx.length === 0;
+  $("retry-miss").onclick = () => startSet(S.si, missIdx);
+  $("retry-all").onclick = () => startSet(S.si);
+  const nx = (S.si + 1) % BANK.length;
+  $("next-set").textContent = `Next: ${BANK[nx].title} →`;
+  $("next-set").onclick = () => startSet(nx);
+  RFILTER = "all"; document.querySelectorAll(".seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.f === "all")));
+  renderReview(); renderSlip(got, n);
+  show("result");
+}
+const lab = (i) => (S.set.fixed ? LETTERS[i] + " · " : "");
+function renderReview() {
+  $("review").innerHTML = S.items.filter((x) => RFILTER === "all" || x.picked !== x.Q.a).map((x) => {
+    const ok = x.picked === x.Q.a, Q = x.Q;
+    return `<li class="${ok ? "ok" : "no"}"><span class="mk">${ok ? "✓" : "✗"}</span><div>
+      ${Q.ctx ? `<p class="rctx">${S.set.id === "write" ? Q.ctx.replace(/<\/?b>/g, "") : esc(Q.ctx)}</p>` : ""}
+      <p class="rq">${esc(Q.q)}</p>
+      <p class="ans">Answer: <mark>${lab(Q.a)}${esc(Q.o[Q.a])}</mark></p>
+      ${ok ? "" : `<p class="you">You chose: <s>${lab(x.picked)}${esc(Q.o[x.picked])}</s></p>`}
+      <p class="why">${esc(Q.e)}</p></div></li>`;
+  }).join("") || `<li class="ok"><span class="mk">✓</span><div><p class="rq">No mistakes to review.</p></div></li>`;
+}
+document.querySelectorAll(".seg button").forEach((b) => (b.onclick = () => {
+  RFILTER = b.dataset.f; document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); renderReview();
+}));
+$("home-btn").onclick = () => { renderHome(); show("home"); };
+
+/* ---- result slip ---- */
+let SLIP = "";
+function renderSlip(got, n) {
+  $("slip-name").value = STORE.name || ""; $("slip-class").value = STORE.cls || "";
+  const draw = () => {
+    const name = $("slip-name").value.trim() || "(your name)", cls = $("slip-class").value.trim() || "(your class)";
+    const missed = S.items.filter((x) => x.picked !== x.Q.a).length;
+    const d = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+    SLIP = `ESL Skills Sampler · result slip\nName: ${name}\nClass: ${cls}\nSet ${S.si + 1}: ${S.set.title}${S.retry ? " (mistakes retry)" : ""}\nSkill: ${S.set.skill}, ${S.set.focus}\nScore: ${got}/${n} (${starsFor(got, n)}★)\nHints used: ${S.items.filter((x) => x.hint).length}\nMissed: ${missed}\nDate: ${d}`;
+    $("slip-out").textContent = SLIP;
+  };
+  $("slip-name").oninput = $("slip-class").oninput = () => { STORE.name = $("slip-name").value.trim(); STORE.cls = $("slip-class").value.trim(); saveStore(STORE); draw(); };
+  draw();
+}
+$("slip-copy").onclick = async () => {
+  let ok = false;
+  try { await navigator.clipboard.writeText(SLIP); ok = true; } catch (e) {
+    try { const t = document.createElement("textarea"); t.value = SLIP; document.body.appendChild(t); t.select(); ok = document.execCommand("copy"); t.remove(); } catch (e2) {}
+  }
+  toast(ok ? "Slip copied!" : "Couldn't copy. Select the text instead.");
+};
+function toast(msg) { const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 2100); }
+
+/* ---- teacher notes ---- */
+$("t-map").innerHTML = BANK.map((s, i) => `<tr><td><b>${i + 1}. ${esc(s.title)}</b></td><td>${esc(s.skill)}: ${esc(s.focus)}</td><td>${esc(TASK_LINK[s.id])}</td></tr>`).join("");
+$("teacher-btn").onclick = () => { $("teacher").hidden = false; $("teacher-close").focus(); };
+$("teacher-close").onclick = () => { $("teacher").hidden = true; $("teacher-btn").focus(); };
+$("teacher").onclick = (e) => { if (e.target === $("teacher")) $("teacher").hidden = true; };
+
+/* ---- keyboard ---- */
+document.addEventListener("keydown", (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (!$("teacher").hidden) { if (e.key === "Escape") $("teacher").hidden = true; return; }
+  if ($("quiz").hidden || /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+  const k = e.key.toUpperCase(), it = S.items[S.cur];
+  if ("ABCD".includes(k) && k.length === 1 && it.picked == null) { e.preventDefault(); answer(it.order["ABCD".indexOf(k)]); }
+  else if (k === "H") showHint();
+  else if (k === "T") { const d = $("text-d"); if (d) d.open = !d.open; }
+  else if (e.key === "Enter" && it.picked != null && !e.target.closest("button:not(#next-btn)")) { e.preventDefault(); next(); }
+  else if (e.key === "ArrowRight" && it.picked != null) next();
+  else if (e.key === "ArrowLeft") prev();
+});
+
+/* ---- deep link: #set-2 opens Set 2 ---- */
+renderHome();
+const m = location.hash.match(/^#set-(\d+)$/);
+if (m && BANK[+m[1] - 1]) startSet(+m[1] - 1);
+
+/* ---- self-test: open with ?test to check the question bank ---- */
+if (/[?&]test\b/.test(location.search)) {
+  const errs = [];
+  BANK.forEach((s, si) => s.q.forEach((Q, qi) => {
+    const id = `set ${si + 1} q${qi + 1}`;
+    if (!Array.isArray(Q.o) || Q.o.length !== 4) errs.push(id + ": needs 4 options");
+    else if (new Set(Q.o).size !== 4) errs.push(id + ": duplicate options");
+    if (!(Q.a >= 0 && Q.a < 4)) errs.push(id + ": answer index out of range");
+    if (!Q.q || !Q.h || !Q.e) errs.push(id + ": missing question, hint or explanation");
+  }));
+  console.log(errs.length ? "SELF-TEST FAILED\n" + errs.join("\n") : `SELF-TEST PASSED: ${TOTAL_Q} questions in ${BANK.length} sets`);
+  toast(errs.length ? `Self-test: ${errs.length} problem(s), see console` : `Self-test passed · ${TOTAL_Q} questions`);
+}
+</script>
+</body>
+</html>
